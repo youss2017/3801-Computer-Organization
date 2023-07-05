@@ -19,7 +19,7 @@ start:
 	li $v0, 5 # load read integer syscall id
 	syscall
 	move $s0, $v0 # temporarily store value in v0 to s0 (f_ten)
-	sw $v0, f_ten_var
+	sw $v0, f_ten_var # store the value of f_ten in stack memory
 	
 	jal print_new_line
 	
@@ -38,6 +38,7 @@ start:
 	
 	# branch if g_ten - 2 <= 0
 	ble $s1, 0, error_handler
+	# ble $s0, 27, error_handler
 	
 	###################### Compute (f_ten + 2) / (g_ten - 2)
 	# store quotient in s3
@@ -77,8 +78,8 @@ start:
 	la $a0, h_remainder_str # load string address
 	syscall
 	
-	li $v0, 1
-	move $a0, $s4
+	li $v0, 1 # load print number syscall id
+	move $a0, $s4 # put number in syscall argument
 	syscall
 	
 	################### Compute division to determine remainder
@@ -107,7 +108,10 @@ start:
 	subi $t1, $t1, 1 # t1+=1
 	move $t2, $t0 # t2=t0
 	
+	######################## Display results (part 2)
 	print_output2:
+	# ble $t2, 0, exit # do not show i_mod if i_mod < 0
+	
 	jal print_new_line  # jump to print new line
 	jal print_new_line  # jump to print new line
 	
@@ -121,18 +125,16 @@ start:
 	
 	jal print_new_line # jump to routuine 
 	
-	jal print_new_line  # jump to print new line
-	j start # return to start of program
-	
+	exit:
 	# exit
 	li $v0, 10 # load exit syscall id
 	syscall # exit
 	
 print_new_line:
 	li $v0, 11 # print character syscall id
-	li $a0, 10 # ascii '\n'
+	li $a0, 10 # ascii '\n' '\
 	syscall
-	jr $ra
+	jr $ra # return statement
 	
 error_handler:
 	jal print_new_line # jump to print new line
