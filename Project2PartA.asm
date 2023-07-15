@@ -150,4 +150,8 @@ print_output:
 	# int array to contain letter counts
 	# indexes [K] [N] [I] [G] [H] [T] [S]
 	counter_array: .space 28
-	sample_text: .asciiz "UCF was originally founded in 1963 and is the largest university in the country today per enrollment.\nThe College of Engineering and Computer Science (CECS) hosts an assortment of 17 Engineering\nprograms for students to choose from. In fact, Computer Engineering ranks fifth place in the top 5\nCECS degrees offered by UCF."
+# sample_text: .asciiz "Lorem, ipsum."
+# sample_text: .asciiz "Lorem ipsum dolor sit."
+# sample_text: .asciiz "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+# sample_text: .asciiz "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum maxime magni nostrum soluta est dolores ad?"
+ sample_text: .asciiz "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi quas, voluptatum laudantium incidunt voluptatibus blanditiis provident vitae voluptate exercitationem recusandae ullam distinctio libero sit quos delectus vero nostrum ex cupiditate ipsa atque."
