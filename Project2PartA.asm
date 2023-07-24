@@ -154,4 +154,7 @@ print_output:
 # sample_text: .asciiz "Lorem ipsum dolor sit."
 # sample_text: .asciiz "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
 # sample_text: .asciiz "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum maxime magni nostrum soluta est dolores ad?"
- sample_text: .asciiz "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi quas, voluptatum laudantium incidunt voluptatibus blanditiis provident vitae voluptate exercitationem recusandae ullam distinctio libero sit quos delectus vero nostrum ex cupiditate ipsa atque."
+# sample_text: .asciiz "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi quas, voluptatum laudantium incidunt voluptatibus blanditiis provident vitae voluptate exercitationem recusandae ullam distinctio libero sit quos delectus vero nostrum ex cupiditate ipsa atque."
+#sample_text: .asciiz "!@#$%%^&*()_+135790-="
+#sample_text: .asciiz "KNIGHTS ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+#sample_text: .asciiz "knights abcdefghijklmnopqrstuvwxyz"
