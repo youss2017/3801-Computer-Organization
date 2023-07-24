@@ -51,8 +51,12 @@ int main() {
     // const char* sample_text = "Lorem, ipsum.";
     // const char* sample_text = "Lorem ipsum dolor sit.";
     // const char* sample_text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit.";
-     const char* sample_text = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum maxime magni nostrum soluta est dolores ad?";
+    // const char* sample_text = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum maxime magni nostrum soluta est dolores ad?";
     // const char* sample_text = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi quas, voluptatum laudantium incidunt voluptatibus blanditiis provident vitae voluptate exercitationem recusandae ullam distinctio libero sit quos delectus vero nostrum ex cupiditate ipsa atque.";
+
+    // const char* sample_text = "!@#$%%^&*()_+135790-=";
+    // const char* sample_text = "KNIGHTS ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const char* sample_text = "knights abcdefghijklmnopqrstuvwxyz";
 
     const char* address = sample_text;
     char c = *address;
